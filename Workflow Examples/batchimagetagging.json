@@ -1,0 +1,1952 @@
+{
+  "last_node_id": 208,
+  "last_link_id": 348,
+  "nodes": [
+    {
+      "id": 49,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2250,
+        1100
+      ],
+      "size": {
+        "0": 283.74884033203125,
+        "1": 170.41444396972656
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 64,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            144
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "1girl, solo, blurry, jacket, blurry background, jewelry, necklace, wavy hair, open clothes, shirt, red jacket, blonde hair, original, upper body, white shirt, looking at viewer, lips, depth of field, open jacket, brown eyes"
+      ]
+    },
+    {
+      "id": 113,
+      "type": "Tag Alternating Combiner",
+      "pos": [
+        2630,
+        970
+      ],
+      "size": {
+        "0": 315,
+        "1": 150
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "tag_field1",
+          "type": "STRING",
+          "link": 143,
+          "widget": {
+            "name": "tag_field1"
+          },
+          "slot_index": 0
+        },
+        {
+          "name": "tag_field2",
+          "type": "STRING",
+          "link": 144,
+          "widget": {
+            "name": "tag_field2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            159,
+            328
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Tag Alternating Combiner"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ", ",
+        "",
+        "",
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 189,
+      "type": "Note",
+      "pos": [
+        2980,
+        800
+      ],
+      "size": {
+        "0": 309.4367370605469,
+        "1": 70.64730834960938
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "title": "String Replace",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Simple string replacer, great for replacing individual tag words with an entire sentence."
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 58,
+      "type": "JWStringReplace",
+      "pos": [
+        2970,
+        930
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "STRING",
+          "link": 159,
+          "widget": {
+            "name": "source"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            327
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JWStringReplace"
+      },
+      "widgets_values": [
+        "",
+        "1girl",
+        "a photo of a woman"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 100,
+      "type": "Tag Duplicate Remover",
+      "pos": [
+        2980,
+        1220
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "tag_field",
+          "type": "STRING",
+          "link": 327,
+          "widget": {
+            "name": "tag_field"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            147
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Tag Duplicate Remover"
+      },
+      "widgets_values": [
+        "",
+        ", "
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 101,
+      "type": "ShowText|pysssss",
+      "pos": [
+        3350,
+        820
+      ],
+      "size": {
+        "0": 325.1111755371094,
+        "1": 140.14805603027344
+      },
+      "flags": {},
+      "order": 32,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 147,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            195
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "a photo of a woman, solo, long hair, looking at viewer, shirt, blonde hair, jewelry, jacket, white shirt, upper body, open clothes, necklace, blurry, open jacket, lips, blurry background, depth of field, wavy hair, messy hair, red jacket, nose, realistic, leather, leather jacket, photorealistic, original, brown eyes"
+      ]
+    },
+    {
+      "id": 190,
+      "type": "Note",
+      "pos": [
+        2980,
+        1090
+      ],
+      "size": {
+        "0": 308.09259033203125,
+        "1": 68.57373046875
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "title": "Tag Duplicates Remover",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Define a delimiter and remove duplicate tags, only the first instance of a tag is kept."
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 201,
+      "type": "MathExpression|pysssss",
+      "pos": [
+        1320,
+        1390
+      ],
+      "size": {
+        "0": 296.2605285644531,
+        "1": 144.5316925048828
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": 340,
+          "slot_index": 0
+        },
+        {
+          "name": "b",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null
+        },
+        {
+          "name": "c",
+          "type": "INT,FLOAT,IMAGE,LATENT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            339
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "MathExpression|pysssss"
+      },
+      "widgets_values": [
+        "a+1"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "WD14Tagger|pysssss",
+      "pos": [
+        2050,
+        930
+      ],
+      "size": {
+        "0": 343.2169494628906,
+        "1": 220
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 341,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            65
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WD14Tagger|pysssss"
+      },
+      "widgets_values": [
+        "wd-swinv2-tagger-v3",
+        0.3,
+        0.85,
+        true,
+        false,
+        ""
+      ]
+    },
+    {
+      "id": 56,
+      "type": "Joytag",
+      "pos": [
+        2080,
+        1130
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 342
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            64
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joytag"
+      },
+      "widgets_values": [
+        20
+      ]
+    },
+    {
+      "id": 57,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2250,
+        900
+      ],
+      "size": {
+        "0": 276.4972229003906,
+        "1": 159.0245361328125
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 65,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            143
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "1girl, solo, long hair, looking at viewer, shirt, blonde hair, jewelry, jacket, white shirt, upper body, open clothes, necklace, blurry, open jacket, lips, blurry background, depth of field, wavy hair, messy hair, red jacket, nose, realistic, leather, leather jacket, photorealistic"
+      ]
+    },
+    {
+      "id": 200,
+      "type": "SetNode",
+      "pos": [
+        1670,
+        1530
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "link": 339
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "title": "Set_Index+1",
+      "properties": {
+        "previousName": ""
+      },
+      "widgets_values": [
+        "Index+1"
+      ]
+    },
+    {
+      "id": 198,
+      "type": "Load Image Batch",
+      "pos": [
+        1670,
+        1260
+      ],
+      "size": {
+        "0": 315,
+        "1": 222
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "index",
+          "type": "INT",
+          "link": 337,
+          "widget": {
+            "name": "index"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            341,
+            342,
+            343
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "filename_text",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Load Image Batch"
+      },
+      "widgets_values": [
+        "single_image",
+        119,
+        "Batch",
+        "C:\\AI\\Training Workspace\\Datasets\\Pixart Sigma Toy Dataset\\InternImgs",
+        "*",
+        "false",
+        "true"
+      ]
+    },
+    {
+      "id": 199,
+      "type": "Show any [Crystools]",
+      "pos": [
+        1670,
+        1070
+      ],
+      "size": {
+        "0": 315,
+        "1": 148
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "any_value",
+          "type": "*",
+          "link": 338,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Show any [Crystools]"
+      }
+    },
+    {
+      "id": 188,
+      "type": "Note",
+      "pos": [
+        2630,
+        800
+      ],
+      "size": {
+        "0": 310.6462707519531,
+        "1": 119.9823226928711
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "title": "Tag Alternating Combiner",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Takes input from multiple fields and round robins them according to their ratio.\n\nFor instance, if Field 1 has 20 tags, and Field 2 has 5 tags, 4 tags are taken from field 1, then 1 tag taken from field 2, and this is repeated."
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 196,
+      "type": "Logic Boolean",
+      "pos": [
+        1310,
+        930
+      ],
+      "size": {
+        "0": 315,
+        "1": 118
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "BOOLEAN",
+          "type": "BOOLEAN",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "NUMBER",
+          "type": "NUMBER",
+          "links": [
+            336
+          ],
+          "shape": 3
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "FLOAT",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Logic Boolean"
+      },
+      "widgets_values": [
+        0
+      ]
+    },
+    {
+      "id": 197,
+      "type": "Number Counter",
+      "pos": [
+        1310,
+        1130
+      ],
+      "size": {
+        "0": 315,
+        "1": 194
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "reset_bool",
+          "type": "NUMBER",
+          "link": 336
+        }
+      ],
+      "outputs": [
+        {
+          "name": "number",
+          "type": "NUMBER",
+          "links": null,
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "float",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "int",
+          "type": "INT",
+          "links": [
+            337,
+            338,
+            340,
+            344
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Number Counter"
+      },
+      "widgets_values": [
+        "integer",
+        "increment_to_stop",
+        -2,
+        10000,
+        1
+      ]
+    },
+    {
+      "id": 205,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2260,
+        720
+      ],
+      "size": {
+        "0": 268.8930969238281,
+        "1": 131.87596130371094
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 345,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 204,
+      "type": "Note",
+      "pos": [
+        1680,
+        760
+      ],
+      "size": {
+        "0": 313.3032531738281,
+        "1": 67.08191680908203
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "title": "Load Text List",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Takes a file/folder path and then use an integer to open that file. Use this to batch open and edit captions."
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 194,
+      "type": "LLavaOptionalMemoryFreeSimple",
+      "pos": [
+        2260,
+        1400
+      ],
+      "size": {
+        "0": 570.4261474609375,
+        "1": 222.18968200683594
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 343,
+          "slot_index": 0
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 330,
+          "widget": {
+            "name": "prompt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            332
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLavaOptionalMemoryFreeSimple"
+      },
+      "widgets_values": [
+        "Llava\\llava-v1.6-mistral-7b.Q5_K_M.gguf",
+        "Llava\\mmproj-model-f16.gguf",
+        2028,
+        70,
+        8,
+        "",
+        0.11,
+        false
+      ]
+    },
+    {
+      "id": 118,
+      "type": "ShowText|pysssss",
+      "pos": [
+        4080,
+        920
+      ],
+      "size": {
+        "0": 385.642333984375,
+        "1": 204.2002716064453
+      },
+      "flags": {},
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 322,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            226,
+            274
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        " The image is a portrait of a woman with long, curly blonde hair. She has fair skin and is wearing makeup that includes lipstick and possibly eyeshadow. a photo of a woman, solo, long hair, looking at viewer, shirt, blonde hair, jewelry, jacket, white shirt, upper body, open clothes, necklace, blurry, open jacket, lips, blurry background, depth of field, wavy hair, messy hair, red jacket, nose, realistic, leather, leather jacket, photorealistic"
+      ]
+    },
+    {
+      "id": 191,
+      "type": "Note",
+      "pos": [
+        3350,
+        1010
+      ],
+      "size": {
+        "0": 323.3040771484375,
+        "1": 81.32803344726562
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "title": "Split Tags / Sentences",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Split a field of tags into 2 sets, define the max number before splitting.\n\nA version exists for sentence splitting"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 206,
+      "type": "Note",
+      "pos": [
+        4080,
+        1160
+      ],
+      "size": {
+        "0": 387.6927490234375,
+        "1": 58
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "title": "TokenCounter",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Counts the amount of tokens (words) in a given field"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 192,
+      "type": "Split Sentences",
+      "pos": [
+        3360,
+        1330
+      ],
+      "size": {
+        "0": 315,
+        "1": 102
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "sentence",
+          "type": "STRING",
+          "link": 332,
+          "widget": {
+            "name": "sentence"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            347
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Split Sentences"
+      },
+      "widgets_values": [
+        "",
+        2
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 137,
+      "type": "Split Tags",
+      "pos": [
+        3350,
+        1140
+      ],
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 33,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "tag_field",
+          "type": "STRING",
+          "link": 195,
+          "widget": {
+            "name": "tag_field"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            348
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Split Tags"
+      },
+      "widgets_values": [
+        "",
+        25,
+        ", "
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 151,
+      "type": "JWIntegerToString",
+      "pos": [
+        4660,
+        1060
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "INT",
+          "link": 219,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            222
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JWIntegerToString"
+      },
+      "widgets_values": [
+        0,
+        "{:04d}"
+      ]
+    },
+    {
+      "id": 153,
+      "type": "KepStringLiteral",
+      "pos": [
+        4690,
+        1190
+      ],
+      "size": {
+        "0": 288.44439697265625,
+        "1": 85.55554962158203
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            223
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KepStringLiteral"
+      },
+      "widgets_values": [
+        ".txt"
+      ]
+    },
+    {
+      "id": 203,
+      "type": "Load Text List",
+      "pos": [
+        1680,
+        870
+      ],
+      "size": {
+        "0": 315,
+        "1": 150
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "file_name_integer",
+          "type": "INT",
+          "link": 344,
+          "widget": {
+            "name": "file_name_integer"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            345
+          ],
+          "shape": 6,
+          "slot_index": 0
+        },
+        {
+          "name": "FILENAME_STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Load Text List"
+      },
+      "widgets_values": [
+        "C:\\AI\\Training Workspace\\Datasets\\Pixart Sigma Toy Dataset\\InternImgs",
+        0,
+        "txt",
+        "{:04d}"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 207,
+      "type": "Note",
+      "pos": [
+        1320,
+        730
+      ],
+      "size": {
+        "0": 291.9871520996094,
+        "1": 110.91898345947266
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "This workflow is designed for automated image tagging. Reset the logic boolean (set it to 1), hit run (you'll get an error), set it to 0 and hit run again to start from 0. On the right you can also do batch caption editing through using the load text list option."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 187,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2620,
+        1170
+      ],
+      "size": {
+        "0": 325.1111755371094,
+        "1": 140.14805603027344
+      },
+      "flags": {},
+      "order": 30,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 328,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "1girl, 1girl, solo, solo, long hair, looking at viewer, shirt, blonde hair, jewelry, jacket, white shirt, upper body, open clothes, necklace, blurry, open jacket, lips, blurry background, depth of field, wavy hair, messy hair, red jacket, nose, realistic, leather, leather jacket, photorealistic, blurry, jacket, blurry background, jewelry, necklace, wavy hair, open clothes, shirt, red jacket, blonde hair, original, upper body, white shirt, looking at viewer, lips, depth of field, open jacket, brown eyes"
+      ]
+    },
+    {
+      "id": 195,
+      "type": "CR Text Concatenate",
+      "pos": [
+        3720,
+        930
+      ],
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 347,
+          "widget": {
+            "name": "text1"
+          },
+          "slot_index": 0
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 348,
+          "widget": {
+            "name": "text2"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "*",
+          "links": [
+            333
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        " "
+      ]
+    },
+    {
+      "id": 132,
+      "type": "ShowText|pysssss",
+      "pos": [
+        3720,
+        1120
+      ],
+      "size": {
+        "0": 311.6507568359375,
+        "1": 156.93899536132812
+      },
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 333,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            322
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        " The image is a portrait of a woman with long, curly blonde hair. She has fair skin and is wearing makeup that includes lipstick and possibly eyeshadow. a photo of a woman, solo, long hair, looking at viewer, shirt, blonde hair, jewelry, jacket, white shirt, upper body, open clothes, necklace, blurry, open jacket, lips, blurry background, depth of field, wavy hair, messy hair, red jacket, nose, realistic, leather, leather jacket, photorealistic"
+      ]
+    },
+    {
+      "id": 172,
+      "type": "Token Counter",
+      "pos": [
+        4070,
+        1250
+      ],
+      "size": {
+        "0": 210,
+        "1": 48.184471130371094
+      },
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_string",
+          "type": "STRING",
+          "link": 274,
+          "widget": {
+            "name": "input_string"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Token_COUNT",
+          "type": "INT",
+          "links": [
+            346
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Token Counter"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 175,
+      "type": "Display Int (rgthree)",
+      "pos": [
+        4300,
+        1230
+      ],
+      "size": {
+        "0": 210,
+        "1": 76
+      },
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "INT",
+          "link": 346,
+          "widget": {
+            "name": "input"
+          },
+          "dir": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Token Amount",
+      "properties": {
+        "Node name for S&R": "Display Int (rgthree)"
+      },
+      "widgets_values": [
+        0,
+        ""
+      ]
+    },
+    {
+      "id": 152,
+      "type": "GetNode",
+      "pos": [
+        4760,
+        950
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            219
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Get_Index+1",
+      "properties": {},
+      "widgets_values": [
+        "Index+1"
+      ]
+    },
+    {
+      "id": 154,
+      "type": "CR Text Concatenate",
+      "pos": [
+        5000,
+        950
+      ],
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 222,
+          "widget": {
+            "name": "text1"
+          },
+          "slot_index": 0
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 223,
+          "widget": {
+            "name": "text2"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "*",
+          "links": [
+            225
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 139,
+      "type": "SaveText|pysssss",
+      "pos": [
+        5000,
+        1130
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 226,
+          "widget": {
+            "name": "text"
+          }
+        },
+        {
+          "name": "file",
+          "type": "STRING",
+          "link": 225,
+          "widget": {
+            "name": "file"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveText|pysssss"
+      },
+      "widgets_values": [
+        "output",
+        "file.txt",
+        "append",
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 208,
+      "type": "Note",
+      "pos": [
+        4910,
+        850
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Export the text files with the captions into the output folder of your ComfUI install."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 193,
+      "type": "KepStringLiteral",
+      "pos": [
+        1920,
+        1530
+      ],
+      "size": {
+        "0": 309.8985595703125,
+        "1": 99.53450012207031
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            330
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KepStringLiteral"
+      },
+      "widgets_values": [
+        "Describe the image in as much detail as possible."
+      ]
+    },
+    {
+      "id": 186,
+      "type": "LoadImage",
+      "pos": [
+        1772,
+        1797
+      ],
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "000000000075.png",
+        "image"
+      ]
+    }
+  ],
+  "links": [
+    [
+      64,
+      56,
+      0,
+      49,
+      0,
+      "STRING"
+    ],
+    [
+      65,
+      31,
+      0,
+      57,
+      0,
+      "STRING"
+    ],
+    [
+      143,
+      57,
+      0,
+      113,
+      0,
+      "STRING"
+    ],
+    [
+      144,
+      49,
+      0,
+      113,
+      1,
+      "STRING"
+    ],
+    [
+      147,
+      100,
+      0,
+      101,
+      0,
+      "STRING"
+    ],
+    [
+      159,
+      113,
+      0,
+      58,
+      0,
+      "STRING"
+    ],
+    [
+      195,
+      101,
+      0,
+      137,
+      0,
+      "STRING"
+    ],
+    [
+      219,
+      152,
+      0,
+      151,
+      0,
+      "INT"
+    ],
+    [
+      222,
+      151,
+      0,
+      154,
+      0,
+      "STRING"
+    ],
+    [
+      223,
+      153,
+      0,
+      154,
+      1,
+      "STRING"
+    ],
+    [
+      225,
+      154,
+      0,
+      139,
+      1,
+      "STRING"
+    ],
+    [
+      226,
+      118,
+      0,
+      139,
+      0,
+      "STRING"
+    ],
+    [
+      274,
+      118,
+      0,
+      172,
+      0,
+      "STRING"
+    ],
+    [
+      322,
+      132,
+      0,
+      118,
+      0,
+      "STRING"
+    ],
+    [
+      327,
+      58,
+      0,
+      100,
+      0,
+      "STRING"
+    ],
+    [
+      328,
+      113,
+      0,
+      187,
+      0,
+      "STRING"
+    ],
+    [
+      330,
+      193,
+      0,
+      194,
+      1,
+      "STRING"
+    ],
+    [
+      332,
+      194,
+      0,
+      192,
+      0,
+      "STRING"
+    ],
+    [
+      333,
+      195,
+      0,
+      132,
+      0,
+      "STRING"
+    ],
+    [
+      336,
+      196,
+      1,
+      197,
+      0,
+      "NUMBER"
+    ],
+    [
+      337,
+      197,
+      2,
+      198,
+      0,
+      "INT"
+    ],
+    [
+      338,
+      197,
+      2,
+      199,
+      0,
+      "*"
+    ],
+    [
+      339,
+      201,
+      0,
+      200,
+      0,
+      "*"
+    ],
+    [
+      340,
+      197,
+      2,
+      201,
+      0,
+      "INT,FLOAT,IMAGE,LATENT"
+    ],
+    [
+      341,
+      198,
+      0,
+      31,
+      0,
+      "IMAGE"
+    ],
+    [
+      342,
+      198,
+      0,
+      56,
+      0,
+      "IMAGE"
+    ],
+    [
+      343,
+      198,
+      0,
+      194,
+      0,
+      "IMAGE"
+    ],
+    [
+      344,
+      197,
+      2,
+      203,
+      0,
+      "INT"
+    ],
+    [
+      345,
+      203,
+      0,
+      205,
+      0,
+      "STRING"
+    ],
+    [
+      346,
+      172,
+      0,
+      175,
+      0,
+      "INT"
+    ],
+    [
+      347,
+      192,
+      0,
+      195,
+      0,
+      "STRING"
+    ],
+    [
+      348,
+      137,
+      0,
+      195,
+      1,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "VLM Interpretters",
+      "bounding": [
+        1262,
+        583,
+        4199,
+        1049
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5644739300537773,
+      "offset": {
+        "0": -982.8971999574364,
+        "1": -540.8009660547423
+      }
+    }
+  },
+  "version": 0.4
+}

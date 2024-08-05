@@ -1,0 +1,1288 @@
+{
+  "last_node_id": 210,
+  "last_link_id": 352,
+  "nodes": [
+    {
+      "id": 113,
+      "type": "Tag Alternating Combiner",
+      "pos": [
+        2240,
+        870
+      ],
+      "size": {
+        "0": 315,
+        "1": 150
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "tag_field1",
+          "type": "STRING",
+          "link": 143,
+          "widget": {
+            "name": "tag_field1"
+          },
+          "slot_index": 0
+        },
+        {
+          "name": "tag_field2",
+          "type": "STRING",
+          "link": 144,
+          "widget": {
+            "name": "tag_field2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            159,
+            328
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Tag Alternating Combiner"
+      },
+      "widgets_values": [
+        "",
+        "",
+        ", ",
+        "",
+        "",
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 189,
+      "type": "Note",
+      "pos": [
+        2590,
+        700
+      ],
+      "size": {
+        "0": 309.4367370605469,
+        "1": 70.64730834960938
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "title": "String Replace",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Simple string replacer, great for replacing individual tag words with an entire sentence."
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 100,
+      "type": "Tag Duplicate Remover",
+      "pos": [
+        2590,
+        1120
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "tag_field",
+          "type": "STRING",
+          "link": 327,
+          "widget": {
+            "name": "tag_field"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            147
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Tag Duplicate Remover"
+      },
+      "widgets_values": [
+        "",
+        ", "
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 101,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2960,
+        720
+      ],
+      "size": {
+        "0": 325.1111755371094,
+        "1": 140.14805603027344
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 147,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            195
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "a photo of a woman, solo, hair ornament, black hair, long sleeves, holding, jewelry, sitting, upper body, flower, japanese clothes, hair flower, kimono, blurry, black eyes, cup, blurry background, makeup, ring, bug, lipstick, eyeshadow, teacup, red lips, original, pale skin, choker, floral print"
+      ]
+    },
+    {
+      "id": 31,
+      "type": "WD14Tagger|pysssss",
+      "pos": [
+        1660,
+        830
+      ],
+      "size": {
+        "0": 343.2169494628906,
+        "1": 220
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 349,
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            65
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "WD14Tagger|pysssss"
+      },
+      "widgets_values": [
+        "wd-swinv2-tagger-v3",
+        0.3,
+        0.85,
+        true,
+        false,
+        "",
+        "1girl, solo, black hair, long sleeves, hair ornament, holding, jewelry, sitting, upper body, flower, japanese clothes, hair flower, kimono, blurry, black eyes, cup, blurry background, makeup, ring, bug, lipstick, eyeshadow, teacup, red lips"
+      ]
+    },
+    {
+      "id": 56,
+      "type": "Joytag",
+      "pos": [
+        1690,
+        1030
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 350
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            64
+          ],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Joytag"
+      },
+      "widgets_values": [
+        20
+      ]
+    },
+    {
+      "id": 57,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1860,
+        800
+      ],
+      "size": {
+        "0": 276.4972229003906,
+        "1": 159.0245361328125
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 65,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            143
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "1girl, solo, black hair, long sleeves, hair ornament, holding, jewelry, sitting, upper body, flower, japanese clothes, hair flower, kimono, blurry, black eyes, cup, blurry background, makeup, ring, bug, lipstick, eyeshadow, teacup, red lips"
+      ]
+    },
+    {
+      "id": 188,
+      "type": "Note",
+      "pos": [
+        2240,
+        700
+      ],
+      "size": {
+        "0": 310.6462707519531,
+        "1": 119.9823226928711
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "title": "Tag Alternating Combiner",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Takes input from multiple fields and round robins them according to their ratio.\n\nFor instance, if Field 1 has 20 tags, and Field 2 has 5 tags, 4 tags are taken from field 1, then 1 tag taken from field 2, and this is repeated."
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 191,
+      "type": "Note",
+      "pos": [
+        2960,
+        910
+      ],
+      "size": {
+        "0": 323.3040771484375,
+        "1": 81.32803344726562
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "title": "Split Tags / Sentences",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Split a field of tags into 2 sets, define the max number before splitting.\n\nA version exists for sentence splitting"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 206,
+      "type": "Note",
+      "pos": [
+        3720,
+        910
+      ],
+      "size": {
+        "0": 387.6927490234375,
+        "1": 58
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "title": "TokenCounter",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Counts the amount of tokens (words) in a given field"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 192,
+      "type": "Split Sentences",
+      "pos": [
+        2970,
+        1230
+      ],
+      "size": {
+        "0": 315,
+        "1": 102
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "sentence",
+          "type": "STRING",
+          "link": 332,
+          "widget": {
+            "name": "sentence"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            347
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Split Sentences"
+      },
+      "widgets_values": [
+        "",
+        2
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 137,
+      "type": "Split Tags",
+      "pos": [
+        2960,
+        1040
+      ],
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "tag_field",
+          "type": "STRING",
+          "link": 195,
+          "widget": {
+            "name": "tag_field"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            348
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Split Tags"
+      },
+      "widgets_values": [
+        "",
+        25,
+        ", "
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 187,
+      "type": "ShowText|pysssss",
+      "pos": [
+        2230,
+        1070
+      ],
+      "size": {
+        "0": 325.1111755371094,
+        "1": 140.14805603027344
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 328,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "1girl, 1girl, solo, hair ornament, black hair, long sleeves, hair ornament, holding, jewelry, sitting, upper body, flower, japanese clothes, hair flower, kimono, blurry, black eyes, cup, blurry background, makeup, ring, bug, lipstick, eyeshadow, teacup, red lips, flower, hair flower, makeup, black hair, solo, original, ring, jewelry, kimono, cup, lipstick, japanese clothes, blurry, eyeshadow, pale skin, black eyes, choker, floral print"
+      ]
+    },
+    {
+      "id": 132,
+      "type": "ShowText|pysssss",
+      "pos": [
+        3360,
+        870
+      ],
+      "size": {
+        "0": 311.6507568359375,
+        "1": 156.93899536132812
+      },
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 333,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            322
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        " The image features a porcelain doll with striking black hair, adorned with a large floral headpiece that adds a touch of elegance to her appearance. She is dressed in a traditional Asian outfit, complete with intricate beadwork and embroidery. a photo of a woman, solo, hair ornament, black hair, long sleeves, holding, jewelry, sitting, upper body, flower, japanese clothes, hair flower, kimono, blurry, black eyes, cup, blurry background, makeup, ring, bug, lipstick, eyeshadow, teacup, red lips, original"
+      ]
+    },
+    {
+      "id": 186,
+      "type": "LoadImage",
+      "pos": [
+        1290,
+        1000
+      ],
+      "size": {
+        "0": 315,
+        "1": 314
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            349,
+            350,
+            351
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "000000000075.png",
+        "image"
+      ]
+    },
+    {
+      "id": 49,
+      "type": "ShowText|pysssss",
+      "pos": [
+        1860,
+        1000
+      ],
+      "size": {
+        "0": 283.74884033203125,
+        "1": 170.41444396972656
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 64,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            144
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "1girl, hair ornament, flower, hair flower, makeup, black hair, solo, original, ring, jewelry, kimono, cup, lipstick, japanese clothes, blurry, eyeshadow, pale skin, black eyes, choker, floral print"
+      ]
+    },
+    {
+      "id": 209,
+      "type": "Note",
+      "pos": [
+        1340,
+        890
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Select an image"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 118,
+      "type": "ShowText|pysssss",
+      "pos": [
+        3720,
+        670
+      ],
+      "size": {
+        "0": 385.642333984375,
+        "1": 204.2002716064453
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 322,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            226,
+            274
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        " The image features a porcelain doll with striking black hair, adorned with a large floral headpiece that adds a touch of elegance to her appearance. She is dressed in a traditional Asian outfit, complete with intricate beadwork and embroidery. a photo of a woman, solo, hair ornament, black hair, long sleeves, holding, jewelry, sitting, upper body, flower, japanese clothes, hair flower, kimono, blurry, black eyes, cup, blurry background, makeup, ring, bug, lipstick, eyeshadow, teacup, red lips, original"
+      ]
+    },
+    {
+      "id": 195,
+      "type": "CR Text Concatenate",
+      "pos": [
+        3360,
+        680
+      ],
+      "size": {
+        "0": 315,
+        "1": 126
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 347,
+          "widget": {
+            "name": "text1"
+          },
+          "slot_index": 0
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 348,
+          "widget": {
+            "name": "text2"
+          },
+          "slot_index": 1
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "*",
+          "links": [
+            333
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Concatenate"
+      },
+      "widgets_values": [
+        "",
+        "",
+        " "
+      ]
+    },
+    {
+      "id": 208,
+      "type": "Note",
+      "pos": [
+        3489,
+        1105
+      ],
+      "size": {
+        "0": 210,
+        "1": 58
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Export the text files with the captions into the output folder of your ComfUI install."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 139,
+      "type": "SaveText|pysssss",
+      "pos": [
+        3721,
+        1108
+      ],
+      "size": [
+        315.6545948867779,
+        225.91242594022333
+      ],
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 226,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SaveText|pysssss"
+      },
+      "widgets_values": [
+        "output",
+        "loadedimage.txt",
+        "append",
+        true,
+        ""
+      ]
+    },
+    {
+      "id": 175,
+      "type": "Display Int (rgthree)",
+      "pos": [
+        3936,
+        977
+      ],
+      "size": {
+        "0": 210,
+        "1": 76
+      },
+      "flags": {},
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input",
+          "type": "INT",
+          "link": 346,
+          "widget": {
+            "name": "input"
+          },
+          "dir": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Token Amount",
+      "properties": {
+        "Node name for S&R": "Display Int (rgthree)"
+      },
+      "widgets_values": [
+        0,
+        ""
+      ]
+    },
+    {
+      "id": 172,
+      "type": "Token Counter",
+      "pos": [
+        3705,
+        1008
+      ],
+      "size": {
+        "0": 210,
+        "1": 48.184471130371094
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_string",
+          "type": "STRING",
+          "link": 274,
+          "widget": {
+            "name": "input_string"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "Token_COUNT",
+          "type": "INT",
+          "links": [
+            346
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Token Counter"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 193,
+      "type": "KepStringLiteral",
+      "pos": [
+        1542,
+        1394
+      ],
+      "size": {
+        "0": 309.8985595703125,
+        "1": 99.53450012207031
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            330
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "KepStringLiteral"
+      },
+      "widgets_values": [
+        "Describe the image in as much detail as possible."
+      ]
+    },
+    {
+      "id": 194,
+      "type": "LLavaOptionalMemoryFreeSimple",
+      "pos": [
+        1894,
+        1277
+      ],
+      "size": {
+        "0": 570.4261474609375,
+        "1": 222.18968200683594
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 351,
+          "slot_index": 0
+        },
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 330,
+          "widget": {
+            "name": "prompt"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            332
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LLavaOptionalMemoryFreeSimple"
+      },
+      "widgets_values": [
+        "Llava\\llava-v1.6-mistral-7b.Q5_K_M.gguf",
+        "Llava\\mmproj-model-f16.gguf",
+        2028,
+        70,
+        8,
+        "",
+        0.11,
+        false
+      ]
+    },
+    {
+      "id": 58,
+      "type": "JWStringReplace",
+      "pos": [
+        2591,
+        831
+      ],
+      "size": {
+        "0": 315,
+        "1": 106
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "STRING",
+          "link": 159,
+          "widget": {
+            "name": "source"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            327
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "JWStringReplace"
+      },
+      "widgets_values": [
+        "",
+        "1girl",
+        "a photo of a woman"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 190,
+      "type": "Note",
+      "pos": [
+        2591,
+        991
+      ],
+      "size": {
+        "0": 308.09259033203125,
+        "1": 68.57373046875
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "title": "Tag Duplicates Remover",
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Define a delimiter and remove duplicate tags, only the first instance of a tag is kept."
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    }
+  ],
+  "links": [
+    [
+      64,
+      56,
+      0,
+      49,
+      0,
+      "STRING"
+    ],
+    [
+      65,
+      31,
+      0,
+      57,
+      0,
+      "STRING"
+    ],
+    [
+      143,
+      57,
+      0,
+      113,
+      0,
+      "STRING"
+    ],
+    [
+      144,
+      49,
+      0,
+      113,
+      1,
+      "STRING"
+    ],
+    [
+      147,
+      100,
+      0,
+      101,
+      0,
+      "STRING"
+    ],
+    [
+      159,
+      113,
+      0,
+      58,
+      0,
+      "STRING"
+    ],
+    [
+      195,
+      101,
+      0,
+      137,
+      0,
+      "STRING"
+    ],
+    [
+      226,
+      118,
+      0,
+      139,
+      0,
+      "STRING"
+    ],
+    [
+      274,
+      118,
+      0,
+      172,
+      0,
+      "STRING"
+    ],
+    [
+      322,
+      132,
+      0,
+      118,
+      0,
+      "STRING"
+    ],
+    [
+      327,
+      58,
+      0,
+      100,
+      0,
+      "STRING"
+    ],
+    [
+      328,
+      113,
+      0,
+      187,
+      0,
+      "STRING"
+    ],
+    [
+      330,
+      193,
+      0,
+      194,
+      1,
+      "STRING"
+    ],
+    [
+      332,
+      194,
+      0,
+      192,
+      0,
+      "STRING"
+    ],
+    [
+      333,
+      195,
+      0,
+      132,
+      0,
+      "STRING"
+    ],
+    [
+      346,
+      172,
+      0,
+      175,
+      0,
+      "INT"
+    ],
+    [
+      347,
+      192,
+      0,
+      195,
+      0,
+      "STRING"
+    ],
+    [
+      348,
+      137,
+      0,
+      195,
+      1,
+      "STRING"
+    ],
+    [
+      349,
+      186,
+      0,
+      31,
+      0,
+      "IMAGE"
+    ],
+    [
+      350,
+      186,
+      0,
+      56,
+      0,
+      "IMAGE"
+    ],
+    [
+      351,
+      186,
+      0,
+      194,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "VLM Interpretters",
+      "bounding": [
+        1262,
+        583,
+        2901,
+        947
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9090909090909091,
+      "offset": {
+        "0": -1058.5655908641074,
+        "1": -459.97838000363583
+      }
+    }
+  },
+  "version": 0.4
+}
