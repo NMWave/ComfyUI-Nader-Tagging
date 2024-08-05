@@ -1,10 +1,6 @@
 # Nader-Tag-Nodes
 A small set of useful nodes which aid with the tagging process by splitting tags and strings, alternating tags from multiple sources and removing duplicates.
 
-Image below used as example:
-![0076](https://github.com/user-attachments/assets/c14ec78a-0cc6-49c6-980a-458a0370daab)
-
-
 **Tag Alternating Combiner**
 Takes input from multiple fields and round robins them according to their ratio.
 For instance, if Field 1 has 20 tags, and Field 2 has 5 tags, 4 tags are taken from field 1, then 1 tag taken from field 2, and this is repeated.
