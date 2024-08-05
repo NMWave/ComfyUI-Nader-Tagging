@@ -15,11 +15,6 @@ For instance, if Field 1 has 20 tags, and Field 2 has 5 tags, 4 tags are taken f
 <img width="770" alt="image" src="https://github.com/user-attachments/assets/820a056a-1c9b-4fca-9fc3-380063203ce5">
 
 
-**String Replace**
-Simple string replacer, great for replacing individual tag words with an entire sentence.
-<img width="1103" alt="image" src="https://github.com/user-attachments/assets/45d9615d-6d96-46a9-9db6-709b85a9e860">
-
-
 **Tag Duplicates Remover**
 Define a delimiter and remove duplicate tags, only the first instance of a tag is kept.
 <img width="986" alt="image" src="https://github.com/user-attachments/assets/05d045c4-d87f-4e09-bbf2-9cb4a9c6d8d8">
