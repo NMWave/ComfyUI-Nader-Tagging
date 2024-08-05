@@ -3,7 +3,7 @@ A small set of useful nodes which aid with the tagging process by splitting tags
 
 **To install, clone this repo into custom_modules**
 cd ComfyUI/custom_nodes
-git clone https://github.com/rgthree/rgthree-comfy.git
+git clone https://github.com/NMWave/ComfyUI-Nader-Tagging
 
 **Tag Alternating Combiner**
 Takes input from multiple fields and round robins them according to their ratio.
