@@ -7,6 +7,8 @@ cd ComfyUI/custom_nodes
 
 git clone https://github.com/NMWave/ComfyUI-Nader-Tagging
 
+__________________________________________________________
+
 **Tag Alternating Combiner**
 Takes input from multiple fields and round robins them according to their ratio.
 For instance, if Field 1 has 20 tags, and Field 2 has 5 tags, 4 tags are taken from field 1, then 1 tag taken from field 2, and this is repeated.
