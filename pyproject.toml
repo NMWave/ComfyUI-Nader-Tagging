@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-nader-tagging"
+description = "A small set of useful nodes which aid with the tagging process by splitting tags and strings, alternating tags from multiple sources and removing duplicates."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/NMWave/ComfyUI-Nader-Tagging"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-Nader-Tagging"
+Icon = ""
