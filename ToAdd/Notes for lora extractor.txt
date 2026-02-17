@@ -1,0 +1,29 @@
+Here is context on the nodes_lora_extract.py
+It would be nice if the iterations could be manually set (currently 7 in the code) in the comfyui node
+
+I've made code enhancements to the existing save and extract lora script for Wan T2I training I'd like to share for ComfyUI, here it is: nodes_lora_extract.py
+
+What is it
+If you've seen my existing thread here about training Wan T2I using musubu tuner you would've seen that I mentioned extracting loras out of Wan models, someone mentioned stalling and this taking forever.
+
+The process to extract a lora is as follows:
+
+Create a text to image workflow using loras
+
+At the end of the last lora, add the "Save Checkpoint" node
+
+Open a new workflow and load in:
+
+Two "Load Diffusion Model" nodes, the first is the merged model you created, the second is the base Wan model
+
+A "ModelMergeSubtract" node, connect your two "Load Diffusion Model" nodes. We are doing "Merged Model - Original", so merged model first
+
+"Extract and Save" lora node, connect the model_diff of this node to the output of the subtract node
+
+You can use this lora as a base for your training or to smooth out imperfections from your own training and stabilise a model. The issue is in running this, most people give up because they see two warnings about zero diffs and assume it's failed because there's no further logging and it takes hours to run for Wan.
+
+What the improvement is
+If you go into your ComfyUI folder > comfy_extras > nodes_lora_extract.py, replace the contents of this file with the snippet I attached. It gives you advanced logging, and a massive speed boost that reduces the extraction time from hours to just a minute.
+
+Why this is an improvement
+The original script uses a brute-force method (torch.linalg.svd) that calculates the entire mathematical structure of every single layer, even though it only needs a tiny fraction of that information to create the LoRA. This improved version uses a modern, intelligent approximation algorithm (torch.svd_lowrank) designed for exactly this purpose. Instead of exhaustively analyzing everything, it uses a smart "sketching" technique to rapidly find the most important information in each layer. I have also added (niter=7) to ensure it captures the fine, high-frequency details with the same precision as the slow method. If you notice any softness compared to the original multi-hour method, bump this number up, you slow the lora creation down in exchange for accuracy. 7 is a good number that's hardly differentiable from the original. The result is you get the best of both worlds: the almost identical high-quality, sharp LoRA you'd get from the multi-hour process, but with the speed and convenience of a couple minutes' wait.
